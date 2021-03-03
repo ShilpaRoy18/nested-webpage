@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link
+            href="https://fonts.googleapis.com/css2?family=Ballet&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Russo+One&display=swap"
+            rel="stylesheet">
+    <title>shilpa</title>
+    <style>
+      .container{
+        font-size: 30px;
+        padding: 50px 100px;
+       background-color:black;
+       text-align: center;
+       color:rgb(248, 242, 226);
+      font-family: 'Ballet', cursive;
+font-family: 'Dancing Script', cursive;
+      }
+       .container p{
+        font-family: 'Russo One', sans-serif;
+       }
+      h1{
+        font-size: 40px;
+        font-family: 'Ballet', cursive;
+font-family: 'Dancing Script', cursive;
+      }
+    </style>
+</head>
+<body>
+   <nav>
+     <h1>Indian Standard Time</h1>
+   </nav>
+
+  <div class="container">
+  <h3> The page shows current time of India:</p></h3>
+  <p id="demo"></p>
+  
+</div>
+<script>
+  var myVar= setInterval(myTime,1000);
+    
+      function myTime() {
+        var d = new Date();
+        var m = d.getHours() +':'+ d.getMinutes()+':'+ d.getSeconds();
+        var n= d.getDate()+'/';
+        var  o= d.getMonth() +1;
+        var p = '/'+ d.getFullYear();
+        
+  document.getElementById("demo").innerHTML = m +"<br/> on " + n + o + p;
+}
+    
+ 
+    
+</script>
+</body>
+
+</html>
+
